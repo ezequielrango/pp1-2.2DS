@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background: rgb(237,252,238);
+    background: radial-gradient(circle, rgba(237,252,238,1) 0%, rgba(0,80,176,1) 100%);
+}
+
+.p-dialog-content ng-tns-c53-0{
+    padding: 0%;
+}

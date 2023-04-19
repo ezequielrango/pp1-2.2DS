@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Proyectos</h3>
+        </div>
+        <div class="card-body">
+            <p-table [value]="projects" responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>ID</th>
+                        <th>Autor</th>
+                        <th>Titulo</th>
+                        <th>Fecha de Creación</th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-project let-i="rowIndex">
+                    <tr>
+                        <td>{{project.id}} </td>
+                        <td>{{project.author}}</td>
+                        <td>{{project.title}} </td>
+                        <td>{{project.created}}</td>
+                        <td><button (click)="show(project)" type="button" class="btn btn-outline-dark">Ver Detalle</button></td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

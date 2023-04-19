@@ -1,0 +1,36 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Nuevo Proyecto</h3>
+        </div>
+        <div class="card-body"  >
+            <form [formGroup]="form" autocomplete="off">
+                <div class="form-group">
+                    <label for="">Nombre Autor</label>
+                    <input type="text" class="form-control" formControlName="Author" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Año</label>
+                    <input type="text" class="form-control" formControlName="Year" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Materia</label>
+                    <input type="text" class="form-control" formControlName="Area" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Titulo</label>
+                    <input type="text" class="form-control" formControlName="Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Descripción</label>
+                    <input type="text" class="form-control" formControlName="Description" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Adjuntar un archivo</label>
+                    <input class="form-control" type="file" (change)="onChange($event)" required>
+                </div>
+                <button (click)="saveProject()" [disabled]="form.invalid && file != null" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
